@@ -2,7 +2,7 @@
 {{define "main"}}
 <h1>{{.Title}}</h1>
 
-<p>[<a href="/edit/{{.Title}}">edit</a>]</p>
+<p>[<a href="/edit/{{.Slug}}">edit</a>]</p>
 
-<div>{{printf "%s" .Body | markdown}}</div>
+<div>{{printf "%s" .Content | markdown}}</div>
 {{end}}
